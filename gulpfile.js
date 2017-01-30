@@ -2,6 +2,8 @@ var ftp = require('vinyl-ftp');
 var gutil = require('gulp-util');
 var minimist = require('minimist');
 var args = minimist(process.argv.slice(2));
+var gulp = require('gulp');
+
 gulp.task('deploy', function() {
   var remotePath = '/';
   var conn = ftp.create({
