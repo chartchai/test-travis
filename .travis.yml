@@ -3,7 +3,7 @@ install:
  - npm install
 
 script:
- - gulp build
+ 
 
 env:
  global:
