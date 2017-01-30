@@ -1,11 +1,12 @@
+sudo: required
 language: node_js
 install:
   - npm install
-  - bower install
+
 script:
   - gulp build
   
-  env:
+ env:
   global:
     - "FTP_USER=se234"
     - "FTP_PASSWORD=camtse234"
