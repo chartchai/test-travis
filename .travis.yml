@@ -1,13 +1,14 @@
 language: node_js
 install:
-  - npm install
+ - npm install
 
 script:
-  - gulp build
-  
- env:
-  global:
-    - "FTP_USER=se234"
-    - "FTP_PASSWORD=camtse234"
+ - gulp build
+
+env:
+ global:
+ - "FTP_USER=se234"
+ - "FTP_PASSWORD=camtse234"
+
 after_success:
-     gulp deploy --user $FTP_USER --password $FTP_PASSWORD
+ gulp deploy --user $FTP_USER --password $FTP_PASSWORD
